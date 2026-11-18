@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* El modo oscuro se activa con la clase "dark" en <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Colores de los gráficos (paleta validada para daltonismo) */
+:root {
+  color-scheme: light;
+  --serie-ingresos: #2a78d6;
+  --serie-gastos: #eb6834;
+  --grafico-grilla: #e1e0d9;
+  --grafico-eje: #898781;
+  --grafico-cursor: rgba(11, 11, 11, 0.05);
+  --tooltip-fondo: #ffffff;
+  --tooltip-borde: rgba(11, 11, 11, 0.1);
+  --tooltip-texto: #0b0b0b;
+}
+
+.dark {
+  color-scheme: dark;
+  --serie-ingresos: #3987e5;
+  --serie-gastos: #d95926;
+  --grafico-grilla: #2c2c2a;
+  --grafico-eje: #898781;
+  --grafico-cursor: rgba(255, 255, 255, 0.06);
+  --tooltip-fondo: #1e293b;
+  --tooltip-borde: rgba(255, 255, 255, 0.1);
+  --tooltip-texto: #f0efec;
+}
+
+body {
+  @apply bg-slate-100 text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
