@@ -2,7 +2,7 @@
 
 Aplicación de finanzas personales para registrar ingresos y gastos, ver gráficos, controlar presupuestos por categoría y exportar los datos.
 
-**Demo:** _(agregá acá el link de Vercel)_
+**Demo:** https://panel-gastos-liart.vercel.app (tocá "Cargar datos de ejemplo" para verlo completo)
 
 <!-- Agregá una captura: guardala en docs/captura.png y descomentá la línea de abajo -->
 <!-- ![Captura del panel](docs/captura.png) -->
