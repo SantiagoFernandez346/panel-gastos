@@ -23,6 +23,10 @@ create table if not exists public.presupuestos (
   primary key (user_id, categoria)
 );
 
+-- Permisos para usuarios con sesión (los proyectos nuevos de Supabase no los dan solos)
+grant select, insert, update, delete on public.movimientos to authenticated;
+grant select, insert, update, delete on public.presupuestos to authenticated;
+
 -- Row Level Security: cada usuario solo puede leer y modificar sus propias filas
 alter table public.movimientos enable row level security;
 alter table public.presupuestos enable row level security;
